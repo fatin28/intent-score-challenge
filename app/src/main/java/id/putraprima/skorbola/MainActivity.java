@@ -102,10 +102,10 @@ public class MainActivity extends AppCompatActivity {
 
                 startActivity(intent);
             } else {
-                Toast.makeText(this, "Isi logo!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Anda belum memasukkan logo", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(this, "Isi data!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Anda belum memasukkan data", Toast.LENGTH_SHORT).show();
         }
 
     }

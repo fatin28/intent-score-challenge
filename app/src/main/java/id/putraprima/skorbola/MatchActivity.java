@@ -45,7 +45,6 @@ public class MatchActivity extends AppCompatActivity implements Serializable {
         awayScore = findViewById(R.id.score_away);
         homeScore = findViewById(R.id.score_home);
 
-        //TODO
         //1.Menampilkan detail match sesuai data dari main activity
         //2.Tombol add score menambahkan satu angka dari angka 0, setiap kali di tekan
         //3.Tombol Cek Result menghitung pemenang dari kedua tim dan mengirim nama pemenang ke ResultActivity, jika seri di kirim text "Draw"
@@ -114,16 +113,16 @@ public class MatchActivity extends AppCompatActivity implements Serializable {
         if (scoreHome > scoreAway){
             result = String.valueOf(scoreHome)  + " - " + String.valueOf(scoreAway);
             message = homeTeam + " WIN";
-            scorerNameHome = "Home : " +homeGoals;
+            scorerNameHome = "Score : " +homeGoals;
         }else if(scoreHome < scoreAway){
             result = String.valueOf(scoreHome)  + " - " + String.valueOf(scoreAway);
             message = awayTeam + " WIN";
-            scorerNameAway = "Away " + awayGoals;
+            scorerNameAway = "Score " + awayGoals;
         }else if(scoreHome == scoreAway){
             result = String.valueOf(scoreHome)  + " - " + String.valueOf(scoreAway);
             message = "DRAW";
-            scorerNameHome = "Home : "+homeGoals;
-            scorerNameAway = "Away : "+awayGoals;
+            scorerNameHome = "Score : "+homeGoals;
+            scorerNameAway = "Score : "+awayGoals;
         }
         Intent intent = new Intent(this, ResultActivity.class);
         intent.putExtra("result",result);

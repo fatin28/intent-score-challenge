@@ -37,7 +37,7 @@ public class ScorerActivity extends AppCompatActivity {
     public void handleBackToMatch(View view){
         nameField = playerName.getText().toString();
         if(nameField.equals("")){
-            Toast.makeText(this, "Masukkan nama pemain!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Masukkan nama pemain", Toast.LENGTH_SHORT).show();
         }
         else{
             if (key == 1){

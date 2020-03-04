@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         homeImage =findViewById(R.id.home_logo);
         awayImage = findViewById(R.id.away_logo);
 
-        //TODO
+
 
     }
 
